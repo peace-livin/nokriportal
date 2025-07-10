@@ -25,4 +25,5 @@ urlpatterns = [
     path("pune", views.pune_view, name="pune"),    
     path("hyd", views.hyd_view, name="hyd"),
     
+    
 ]

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,12 +13,24 @@
 <h3 class="text-center bg-info rounded text-white">Welcom To Mazi Nokri</h3>
 
   <div class="box">
-    <a href="/mum" class="btn btn-primary">Mumbai</a>
-    <a href="/pune" class="btn btn-success">Pune</a>
-    <a href="/hyd" class="btn btn-warning">Hydrabad</a>
+    <div class="card" style="width: 18rem;">
+  
+  <img src="{% static 'images/dawnload.png' %}" class="card-img-top" alt="...">
+
+  <div class="card-body">
+    
   </div>
 
+    <a href="/mum" class="btn btn-primary">Mumbai</a>
+  </div>
+</div>
+   
+    <a href="/pune" class="btn btn-success">Pune</a>
+    <a href="/hyd" class="btn btn-warning">Hydrabad</a>
+    
+  
 
+ </div>
    </div>
     
 </body>
