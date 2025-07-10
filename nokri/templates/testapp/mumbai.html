@@ -4,9 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mumbai</title>
 </head>
-<body>
+<body class="bg-white">
+
+    <table class="table table-bordered text-white">
+        <thead>
+            <tr>
+                <th>Company Name</th>
+                <th>Job Titles</th>
+                <th>Salary</th>
+                <th>Qualifications</th>
+                <th>Joining Date</th>
+                <th>Location</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for mumbai in mumbai %}
+            <tr scope="row">
+                <td>{{mumbai.company_name}}</td>
+                <td>{{mumbai.job_titles}}</td>
+                <td>{{mumbai.sal}}</td>
+                <td>{{mumbai.qualifications}}</td>
+                <td>{{mumbai.joining_date}}</td>
+                <td>{{mumbai.location}}</td>
+                <td>{{mumbai.address}}</td>
+            </tr>
+            {% endfor %}
+
+    </table>
     
 </body>
 </html>

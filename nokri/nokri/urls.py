@@ -21,8 +21,8 @@ from testapp import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", views.home, name="home"),
-    path("mum", views.mumbai, name="mumbai"),
-    path("pune", views.pune, name="pune"),
-    path("hyd", views.hyd, name="hyd"),
+    path("mum", views.mumbai_view, name="mumbai"),
+    path("pune", views.pune_view, name="pune"),    
+    path("hyd", views.hyd_view, name="hyd"),
     
 ]

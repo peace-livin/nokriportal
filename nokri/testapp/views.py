@@ -5,14 +5,15 @@ from testapp.models import Mumbai, Pune, Hyderabad
 def home(request):
     return render(request, 'testapp/home.html')
 
-def mumbai(request):
-    mumbai = Mumbai.objects.all()
-    return render(request, 'testapp/mumbai.html', {'mumbai': mumbai})
+def mumbai_view(request):
+    job_list = Mumbai.objects.all()
+    return render(request, 'testapp/mumbai.html', {'job_list': job_list})
 
-def pune(request):
-    pune = Pune.objects.all()
-    return render(request, 'testapp/pune.html', {'pune': pune})
+def pune_view(request):
+    job_list = Pune.objects.all()
+    return render(request, 'testapp/pune.html', {'job_list': job_list})
 
-def hyd(request):
-    hydrabad = Hyderabad.objects.all()
-    return render(request, 'testapp/hydrabad.html', {'hydrabad': hydrabad})
+def hyd_view(request):
+    job_list = Hyderabad.objects.all()
+    return render(request, 'testapp/hydrabad.html', {'job_list': job_list})
+
